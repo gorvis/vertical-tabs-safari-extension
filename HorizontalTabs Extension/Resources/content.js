@@ -7,14 +7,16 @@ function createSidebar() {
   if (sidebar) return;
   
   sidebar = document.createElement('div');
-  sidebar.id = 'horizontal-tabs-sidebar';
-  sidebar.className = 'horizontal-tabs-sidebar';
+  sidebar.id = 'ht-sidebar';
+  sidebar.className = 'ht-sidebar';
+  sidebar.setAttribute('role', 'navigation');
+  sidebar.setAttribute('aria-label', 'Open tabs sidebar');
   
   document.body.appendChild(sidebar);
   
   // Adjust viewport and transform everything
   const style = document.createElement('style');
-  style.id = 'horizontal-tabs-style-override';
+  style.id = 'ht-style-override';
   style.textContent = `
     /* Force the entire page to shift right */
     html {
@@ -28,11 +30,19 @@ function createSidebar() {
     }
     
     /* Prevent the sidebar from being transformed */
-    #horizontal-tabs-sidebar {
+    #ht-sidebar {
       transform: translateX(-50px) !important;
     }
   `;
   document.head.appendChild(style);
+  
+  // Close context menu when clicking outside
+  document.addEventListener('mousedown', (e) => {
+    if (!e.target.closest('.ht-context-menu')) {
+      const menu = document.querySelector('.ht-context-menu');
+      if (menu) menu.remove();
+    }
+  }, true);
   
   renderTabs();
 }
@@ -46,27 +56,32 @@ function renderTabs() {
   // Pinned tabs section
   if (currentTabs.pinned && currentTabs.pinned.length > 0) {
     const pinnedSection = document.createElement('div');
-    pinnedSection.className = 'tab-section pinned-section';
+    pinnedSection.className = 'ht-tab-section ht-pinned-section';
+    pinnedSection.setAttribute('role', 'list');
+    pinnedSection.setAttribute('aria-label', 'Pinned tabs');
     
     currentTabs.pinned.forEach(tab => {
-      pinnedSection.appendChild(createTabElement(tab));
+      pinnedSection.appendChild(createTabElement(tab, true));
     });
     
     sidebar.appendChild(pinnedSection);
     
     // Divider
     const divider = document.createElement('div');
-    divider.className = 'tab-divider';
+    divider.className = 'ht-tab-divider';
+    divider.setAttribute('role', 'separator');
     sidebar.appendChild(divider);
   }
   
   // Regular tabs section
   if (currentTabs.regular && currentTabs.regular.length > 0) {
     const regularSection = document.createElement('div');
-    regularSection.className = 'tab-section regular-section';
+    regularSection.className = 'ht-tab-section ht-regular-section';
+    regularSection.setAttribute('role', 'list');
+    regularSection.setAttribute('aria-label', 'Regular tabs');
     
     currentTabs.regular.forEach(tab => {
-      regularSection.appendChild(createTabElement(tab));
+      regularSection.appendChild(createTabElement(tab, false));
     });
     
     sidebar.appendChild(regularSection);
@@ -74,29 +89,106 @@ function renderTabs() {
 }
 
 // Create individual tab element
-function createTabElement(tab) {
+function createTabElement(tab, isPinned) {
   const tabEl = document.createElement('div');
-  tabEl.className = 'tab-item' + (tab.active ? ' active' : '');
+  tabEl.className = 'ht-tab-item' + (tab.active ? ' ht-active' : '');
   tabEl.title = tab.title;
+  tabEl.setAttribute('role', 'listitem');
+  tabEl.setAttribute('aria-label', tab.title);
+  
+  if (tab.active) {
+    tabEl.setAttribute('aria-current', 'page');
+  }
+  
+  // Right-click context menu
+  tabEl.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Remove existing menu
+    const existingMenu = document.querySelector('.ht-context-menu');
+    if (existingMenu) existingMenu.remove();
+    
+    // Create new menu
+    const menu = document.createElement('div');
+    menu.className = 'ht-context-menu';
+    menu.setAttribute('role', 'menu');
+    menu.setAttribute('aria-label', 'Tab actions');
+    
+    // Calculate position with viewport bounds checking
+    const menuWidth = 140;
+    const menuHeight = 80;
+    let left = e.pageX;
+    let top = e.pageY;
+    
+    // Check right edge
+    if (left + menuWidth > window.innerWidth + window.scrollX) {
+      left = window.innerWidth + window.scrollX - menuWidth - 10;
+    }
+    
+    // Check bottom edge
+    if (top + menuHeight > window.innerHeight + window.scrollY) {
+      top = window.innerHeight + window.scrollY - menuHeight - 10;
+    }
+    
+    // Ensure not off left/top edges
+    if (left < window.scrollX) left = window.scrollX + 10;
+    if (top < window.scrollY) top = window.scrollY + 10;
+    
+    menu.style.left = left + 'px';
+    menu.style.top = top + 'px';
+    
+    // Pin/Unpin option
+    const pinItem = document.createElement('div');
+    pinItem.className = 'ht-context-menu-item';
+    pinItem.textContent = isPinned ? '📌 Unpin Tab' : '📌 Pin Tab';
+    pinItem.setAttribute('role', 'menuitem');
+    pinItem.onclick = (e) => {
+      e.stopPropagation();
+      chrome.runtime.sendMessage({
+        type: 'PIN_TAB',
+        tabId: tab.id,
+        pin: !isPinned
+      });
+      menu.remove();
+    };
+    
+    // Close tab option
+    const closeItem = document.createElement('div');
+    closeItem.className = 'ht-context-menu-item';
+    closeItem.textContent = '✕ Close Tab';
+    closeItem.setAttribute('role', 'menuitem');
+    closeItem.onclick = (e) => {
+      e.stopPropagation();
+      chrome.runtime.sendMessage({
+        type: 'CLOSE_TAB',
+        tabId: tab.id
+      });
+      menu.remove();
+    };
+    
+    menu.appendChild(pinItem);
+    menu.appendChild(closeItem);
+    document.body.appendChild(menu);
+  });
   
   // Create favicon with fallback
   if (tab.favIconUrl && tab.favIconUrl !== 'default') {
     const favicon = document.createElement('img');
-    favicon.className = 'tab-favicon';
+    favicon.className = 'ht-tab-favicon';
     favicon.src = tab.favIconUrl;
+    favicon.alt = '';
+    favicon.setAttribute('aria-hidden', 'true');
     
     favicon.onerror = () => {
-      // Try Google's favicon service
       try {
         const fallbackUrl = `https://www.google.com/s2/favicons?domain=${new URL(tab.url).hostname}&sz=32`;
         if (favicon.src !== fallbackUrl) {
           favicon.src = fallbackUrl;
         } else {
-          // Final fallback to letter
           favicon.replaceWith(createLetterIcon(tab.title));
         }
       } catch (e) {
-        // URL parsing failed, use letter icon
         favicon.replaceWith(createLetterIcon(tab.title));
       }
     };
@@ -124,8 +216,9 @@ function createLetterIcon(title) {
   const colorIndex = letter.charCodeAt(0) % colors.length;
   
   const icon = document.createElement('div');
-  icon.className = 'tab-favicon tab-letter-icon';
+  icon.className = 'ht-tab-favicon ht-tab-letter-icon';
   icon.textContent = letter;
+  icon.setAttribute('aria-hidden', 'true');
   icon.style.cssText = `
     width: 20px;
     height: 20px;
