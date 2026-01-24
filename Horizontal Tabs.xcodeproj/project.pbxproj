@@ -56,18 +56,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		229B7AD72F167E350051F4E4 /* Exceptions for "HorizontalTabs Extension" folder in "HorizontalTabs Extension" target */ = {
+		226C93592F1C820300B6280B /* Exceptions for "HorizontalTabs" folder in "HorizontalTabs" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 229B7ABD2F167E350051F4E4 /* HorizontalTabs Extension */;
+			target = 229B7A8D2F167E330051F4E4 /* HorizontalTabs */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		229B7A902F167E330051F4E4 /* HorizontalTabs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				226C93592F1C820300B6280B /* Exceptions for "HorizontalTabs" folder in "HorizontalTabs" target */,
+			);
 			path = HorizontalTabs;
 			sourceTree = "<group>";
 		};
@@ -83,11 +86,7 @@
 		};
 		229B7AC22F167E350051F4E4 /* HorizontalTabs Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				229B7AD72F167E350051F4E4 /* Exceptions for "HorizontalTabs Extension" folder in "HorizontalTabs Extension" target */,
-			);
 			explicitFolders = (
-				Resources/_locales,
 				Resources/images,
 			);
 			path = "HorizontalTabs Extension";
@@ -270,7 +269,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "HorizontalTabs" */;
+			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -567,19 +566,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKBKPQMMX7;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = HorizontalTabs;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = HorizontalTabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Horizontal Tabs";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Guinevere Orvis. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -607,19 +610,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKBKPQMMX7;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = HorizontalTabs;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = HorizontalTabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Horizontal Tabs";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Guinevere Orvis. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -718,7 +725,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "HorizontalTabs" */ = {
+		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7ADB2F167E350051F4E4 /* Debug */,
