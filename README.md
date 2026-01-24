@@ -12,6 +12,7 @@ A Safari extension that displays your open tabs in a vertical sidebar with favic
 - 🎨 Colorful letter icons for sites without favicons
 - 🌓 Dark mode support
 - ⚡ Real-time updates as you open/close tabs
+- 🅰 Uses a fallback favicon when a site’s icon can’t be loaded
 
 ## Installation
 
