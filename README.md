@@ -32,6 +32,15 @@ Coming soon!
 - macOS 11.0 or later
 - Safari 14.0 or later
 
+## Known Limitations
+
+The sidebar uses a page transform technique that may conflict with:
+- Sites using complex CSS transforms
+- 3D animations or transitions  
+- Some accessibility zoom features
+
+If you experience issues on specific sites, please report them on GitHub.
+
 ## Support the Developer
 
 If you find this useful, please consider:

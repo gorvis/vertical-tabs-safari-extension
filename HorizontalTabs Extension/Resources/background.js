@@ -26,6 +26,56 @@ chrome.tabs.onMoved.addListener(() => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'SWITCH_TAB') {
     chrome.tabs.update(message.tabId, { active: true });
+    return;
+  }
+
+  if (message.type === 'PIN_TAB') {
+    const { tabId, pin } = message;
+    chrome.tabs.update(tabId, { pinned: !!pin }).then(() => {
+      updateAllSidebars();
+    });
+    return;
+  }
+
+  if (message.type === 'CLOSE_TAB') {
+    const { tabId } = message;
+    chrome.tabs.remove(tabId).then(() => {
+      updateAllSidebars();
+    });
+    return;
+  }
+
+  if (message.type === 'MOVE_TAB') {
+    const { tabId, newIndex, pin } = message;
+
+    // First, pin/unpin if requested
+    const ensurePinState = typeof pin === 'boolean'
+      ? chrome.tabs.update(tabId, { pinned: !!pin })
+      : Promise.resolve();
+
+    ensurePinState.then(async () => {
+      // Re-query tabs to compute correct index within the intended section
+      const tabs = await chrome.tabs.query({ currentWindow: true });
+      const pinnedTabs = tabs.filter(t => t.pinned);
+      const regularTabs = tabs.filter(t => !t.pinned);
+
+      const targetList = (typeof pin === 'boolean' ? pin : (tabs.find(t => t.id === tabId)?.pinned)) ? pinnedTabs : regularTabs;
+
+      // Clamp newIndex within bounds
+      const clampedIndex = Math.max(0, Math.min(newIndex ?? 0, targetList.length - 1));
+
+      // Compute absolute index among all tabs
+      let absoluteIndex = clampedIndex;
+      if (targetList === regularTabs) {
+        absoluteIndex = pinnedTabs.length + clampedIndex;
+      }
+
+      chrome.tabs.move(tabId, { index: absoluteIndex }).then(() => {
+        updateAllSidebars();
+      });
+    });
+
+    return;
   }
 });
 
@@ -81,5 +131,39 @@ async function formatTab(tab) {
   };
 }
 
+// Inject content.js into all existing tabs on install/startup
+async function enableOnAllTabs() {
+  const tabs = await chrome.tabs.query({});
+  for (const tab of tabs) {
+    if (!tab.id || !tab.url) continue;
+    if (
+      tab.url.startsWith('chrome://') ||
+      tab.url.startsWith('edge://') ||
+      tab.url.startsWith('about:') ||
+      tab.url.startsWith('chrome-extension://') ||
+      tab.url.startsWith('safari-web-extension://')
+    ) {
+      continue;
+    }
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: tab.id, allFrames: false },
+        files: ['content.js']
+      });
+    } catch (e) {
+      // Injection may fail on some pages
+    }
+  }
+}
+
+chrome.runtime.onInstalled.addListener(() => {
+  enableOnAllTabs();
+});
+
+chrome.runtime.onStartup.addListener(() => {
+  enableOnAllTabs();
+});
+
 // Initial update
 updateAllSidebars();
+
