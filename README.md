@@ -1,6 +1,8 @@
-# Horizontal Tabs for Safari
+# Horizontal / Vertial Tabs for Safari
 
-A Safari extension that displays your open tabs in a vertical sidebar with favicons for easy navigation.
+A Safari extension that displays your open tabs in a vertical sidebar with favicons for easy navigation. 
+
+Note: The tab bar itself is horizontal (to the left side of your browser), which enables tabs to show vertically. I probably should have just named it "Sidebar Tabs.' 😂
 
 ![Horizontal Tabs Screenshot](screenshot.png)
 
@@ -18,7 +20,7 @@ A Safari extension that displays your open tabs in a vertical sidebar with favic
 
 ### From Mac App Store
 
-Coming soon!
+Download in Apple App Store: https://apps.apple.com/ca/app/horizontal-tabs/id6758244678?mt=12
 
 ### From Source
 
