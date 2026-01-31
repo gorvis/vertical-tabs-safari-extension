@@ -1,4 +1,4 @@
-# Horizontal / Vertial Tabs for Safari
+# Horizontal / Vertical Tabs for Safari
 
 A Safari extension that displays your open tabs in a vertical sidebar with favicons for easy navigation. 
 
