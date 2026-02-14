@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Horizontal Tabs",
+  "name": "Vertical Tabs",
   "version": "1.1.0",
   "description": "Vertical sidebar showing tab favicons for easy navigation",
   "permissions": [

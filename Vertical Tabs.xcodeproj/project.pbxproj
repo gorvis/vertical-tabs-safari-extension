@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-	229B7ABF2F167E350051F4E4 /* HorizontalTabs Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+	229B7ABF2F167E350051F4E4 /* VerticalTabs Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 229B7ABE2F167E350051F4E4 /* VerticalTabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -16,21 +16,21 @@
 			containerPortal = 229B7A862F167E330051F4E4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 229B7A8D2F167E330051F4E4;
-			remoteInfo = HorizontalTabs;
+			remoteInfo = VerticalTabs;
 		};
 		229B7AB32F167E350051F4E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 229B7A862F167E330051F4E4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 229B7A8D2F167E330051F4E4;
-			remoteInfo = HorizontalTabs;
+			remoteInfo = VerticalTabs;
 		};
 		229B7AC02F167E350051F4E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 229B7A862F167E330051F4E4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 229B7ABD2F167E350051F4E4;
-			remoteInfo = "HorizontalTabs Extension";
+			remoteInfo = "VerticalTabs Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				229B7ABF2F167E350051F4E4 /* HorizontalTabs Extension.appex in Embed Foundation Extensions */,
+				229B7ABF2F167E350051F4E4 /* VerticalTabs Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,34 +49,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		229B7A8E2F167E330051F4E4 /* HorizontalTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		229B7AA82F167E350051F4E4 /* HorizontalTabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalTabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		229B7AB22F167E350051F4E4 /* HorizontalTabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalTabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HorizontalTabs Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229B7A8E2F167E330051F4E4 /* VerticalTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		229B7AA82F167E350051F4E4 /* VerticalTabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerticalTabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		229B7AB22F167E350051F4E4 /* VerticalTabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerticalTabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		229B7ABE2F167E350051F4E4 /* VerticalTabs Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VerticalTabs Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		229B7A902F167E330051F4E4 /* HorizontalTabs */ = {
+		229B7A902F167E330051F4E4 /* VerticalTabs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HorizontalTabs;
+			path = VerticalTabs;
 			sourceTree = "<group>";
 		};
-		229B7AAB2F167E350051F4E4 /* HorizontalTabsTests */ = {
+		229B7AAB2F167E350051F4E4 /* VerticalTabsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HorizontalTabsTests;
+			path = VerticalTabsTests;
 			sourceTree = "<group>";
 		};
-		229B7AB52F167E350051F4E4 /* HorizontalTabsUITests */ = {
+		229B7AB52F167E350051F4E4 /* VerticalTabsUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HorizontalTabsUITests;
+			path = VerticalTabsUITests;
 			sourceTree = "<group>";
 		};
-		229B7AC22F167E350051F4E4 /* HorizontalTabs Extension */ = {
+		229B7AC22F167E350051F4E4 /* VerticalTabs Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			explicitFolders = (
 				Resources/images,
 			);
-			path = "HorizontalTabs Extension";
+			path = "VerticalTabs Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -116,10 +116,10 @@
 		229B7A852F167E330051F4E4 = {
 			isa = PBXGroup;
 			children = (
-				229B7A902F167E330051F4E4 /* HorizontalTabs */,
-				229B7AAB2F167E350051F4E4 /* HorizontalTabsTests */,
-				229B7AB52F167E350051F4E4 /* HorizontalTabsUITests */,
-				229B7AC22F167E350051F4E4 /* HorizontalTabs Extension */,
+				229B7A902F167E330051F4E4 /* VerticalTabs */,
+				229B7AAB2F167E350051F4E4 /* VerticalTabsTests */,
+				229B7AB52F167E350051F4E4 /* VerticalTabsUITests */,
+				229B7AC22F167E350051F4E4 /* VerticalTabs Extension */,
 				229B7A8F2F167E330051F4E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,10 +127,10 @@
 		229B7A8F2F167E330051F4E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				229B7A8E2F167E330051F4E4 /* HorizontalTabs.app */,
-				229B7AA82F167E350051F4E4 /* HorizontalTabsTests.xctest */,
-				229B7AB22F167E350051F4E4 /* HorizontalTabsUITests.xctest */,
-				229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */,
+				229B7A8E2F167E330051F4E4 /* VerticalTabs.app */,
+				229B7AA82F167E350051F4E4 /* VerticalTabsTests.xctest */,
+				229B7AB22F167E350051F4E4 /* VerticalTabsUITests.xctest */,
+				229B7ABE2F167E350051F4E4 /* VerticalTabs Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		229B7A8D2F167E330051F4E4 /* HorizontalTabs */ = {
+		229B7A8D2F167E330051F4E4 /* VerticalTabs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229B7ADE2F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabs" */;
+			buildConfigurationList = 229B7ADE2F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabs" */;
 			buildPhases = (
 				229B7A8A2F167E330051F4E4 /* Sources */,
 				229B7A8B2F167E330051F4E4 /* Frameworks */,
@@ -153,18 +153,18 @@
 				229B7AC12F167E350051F4E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				229B7A902F167E330051F4E4 /* HorizontalTabs */,
+				229B7A902F167E330051F4E4 /* VerticalTabs */,
 			);
-			name = HorizontalTabs;
+			name = VerticalTabs;
 			packageProductDependencies = (
 			);
-			productName = HorizontalTabs;
-			productReference = 229B7A8E2F167E330051F4E4 /* HorizontalTabs.app */;
+			productName = VerticalTabs;
+			productReference = 229B7A8E2F167E330051F4E4 /* VerticalTabs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		229B7AA72F167E350051F4E4 /* HorizontalTabsTests */ = {
+		229B7AA72F167E350051F4E4 /* VerticalTabsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229B7AE12F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabsTests" */;
+			buildConfigurationList = 229B7AE12F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabsTests" */;
 			buildPhases = (
 				229B7AA42F167E350051F4E4 /* Sources */,
 				229B7AA52F167E350051F4E4 /* Frameworks */,
@@ -176,18 +176,18 @@
 				229B7AAA2F167E350051F4E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				229B7AAB2F167E350051F4E4 /* HorizontalTabsTests */,
+				229B7AAB2F167E350051F4E4 /* VerticalTabsTests */,
 			);
-			name = HorizontalTabsTests;
+			name = VerticalTabsTests;
 			packageProductDependencies = (
 			);
-			productName = HorizontalTabsTests;
-			productReference = 229B7AA82F167E350051F4E4 /* HorizontalTabsTests.xctest */;
+			productName = VerticalTabsTests;
+			productReference = 229B7AA82F167E350051F4E4 /* VerticalTabsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		229B7AB12F167E350051F4E4 /* HorizontalTabsUITests */ = {
+		229B7AB12F167E350051F4E4 /* VerticalTabsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229B7AE42F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabsUITests" */;
+			buildConfigurationList = 229B7AE42F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabsUITests" */;
 			buildPhases = (
 				229B7AAE2F167E350051F4E4 /* Sources */,
 				229B7AAF2F167E350051F4E4 /* Frameworks */,
@@ -199,18 +199,18 @@
 				229B7AB42F167E350051F4E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				229B7AB52F167E350051F4E4 /* HorizontalTabsUITests */,
+				229B7AB52F167E350051F4E4 /* VerticalTabsUITests */,
 			);
-			name = HorizontalTabsUITests;
+			name = VerticalTabsUITests;
 			packageProductDependencies = (
 			);
-			productName = HorizontalTabsUITests;
-			productReference = 229B7AB22F167E350051F4E4 /* HorizontalTabsUITests.xctest */;
+			productName = VerticalTabsUITests;
+			productReference = 229B7AB22F167E350051F4E4 /* VerticalTabsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		229B7ABD2F167E350051F4E4 /* HorizontalTabs Extension */ = {
+		229B7ABD2F167E350051F4E4 /* VerticalTabs Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 229B7AD82F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabs Extension" */;
+			buildConfigurationList = 229B7AD82F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabs Extension" */;
 			buildPhases = (
 				229B7ABA2F167E350051F4E4 /* Sources */,
 				229B7ABB2F167E350051F4E4 /* Frameworks */,
@@ -221,13 +221,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				229B7AC22F167E350051F4E4 /* HorizontalTabs Extension */,
+				229B7AC22F167E350051F4E4 /* VerticalTabs Extension */,
 			);
-			name = "HorizontalTabs Extension";
+			name = "VerticalTabs Extension";
 			packageProductDependencies = (
 			);
-			productName = "HorizontalTabs Extension";
-			productReference = 229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */;
+			productName = "VerticalTabs Extension";
+			productReference = 229B7ABE2F167E350051F4E4 /* VerticalTabs Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -256,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */;
+			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Vertical Tabs" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -270,10 +270,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				229B7A8D2F167E330051F4E4 /* HorizontalTabs */,
-				229B7AA72F167E350051F4E4 /* HorizontalTabsTests */,
-				229B7AB12F167E350051F4E4 /* HorizontalTabsUITests */,
-				229B7ABD2F167E350051F4E4 /* HorizontalTabs Extension */,
+				229B7A8D2F167E330051F4E4 /* VerticalTabs */,
+				229B7AA72F167E350051F4E4 /* VerticalTabsTests */,
+				229B7AB12F167E350051F4E4 /* VerticalTabsUITests */,
+				229B7ABD2F167E350051F4E4 /* VerticalTabs Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -343,17 +343,17 @@
 /* Begin PBXTargetDependency section */
 		229B7AAA2F167E350051F4E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229B7A8D2F167E330051F4E4 /* HorizontalTabs */;
+			target = 229B7A8D2F167E330051F4E4 /* VerticalTabs */;
 			targetProxy = 229B7AA92F167E350051F4E4 /* PBXContainerItemProxy */;
 		};
 		229B7AB42F167E350051F4E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229B7A8D2F167E330051F4E4 /* HorizontalTabs */;
+			target = 229B7A8D2F167E330051F4E4 /* VerticalTabs */;
 			targetProxy = 229B7AB32F167E350051F4E4 /* PBXContainerItemProxy */;
 		};
 		229B7AC12F167E350051F4E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 229B7ABD2F167E350051F4E4 /* HorizontalTabs Extension */;
+			target = 229B7ABD2F167E350051F4E4 /* VerticalTabs Extension */;
 			targetProxy = 229B7AC02F167E350051F4E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -369,8 +369,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HorizontalTabs Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HorizontalTabs Extension";
+				INFOPLIST_FILE = "VerticalTabs Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VerticalTabs Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,7 +383,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabs.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabs.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -404,8 +404,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HorizontalTabs Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "HorizontalTabs Extension";
+				INFOPLIST_FILE = "VerticalTabs Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VerticalTabs Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,7 +418,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabs.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabs.Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -562,8 +562,8 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HorizontalTabs/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Horizontal Tabs";
+				INFOPLIST_FILE = VerticalTabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vertical Tabs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Guinevere Orvis. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -580,7 +580,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabs;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -607,8 +607,8 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HorizontalTabs/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Horizontal Tabs";
+				INFOPLIST_FILE = VerticalTabs/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vertical Tabs";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Guinevere Orvis. All rights reserved.";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -625,7 +625,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabs;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -647,14 +647,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorizontalTabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HorizontalTabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VerticalTabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VerticalTabs";
 			};
 			name = Debug;
 		};
@@ -668,14 +668,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HorizontalTabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HorizontalTabs";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VerticalTabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VerticalTabs";
 			};
 			name = Release;
 		};
@@ -687,14 +687,14 @@
 				DEVELOPMENT_TEAM = QKBKPQMMX7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = HorizontalTabs;
+				TEST_TARGET_NAME = VerticalTabs;
 			};
 			name = Debug;
 		};
@@ -706,21 +706,21 @@
 				DEVELOPMENT_TEAM = QKBKPQMMX7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.HorizontalTabsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = SmashingLabs.VerticalTabsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = HorizontalTabs;
+				TEST_TARGET_NAME = VerticalTabs;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */ = {
+		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Vertical Tabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7ADB2F167E350051F4E4 /* Debug */,
@@ -729,7 +729,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229B7AD82F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabs Extension" */ = {
+		229B7AD82F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabs Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7AD92F167E350051F4E4 /* Debug */,
@@ -738,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229B7ADE2F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabs" */ = {
+		229B7ADE2F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7ADF2F167E350051F4E4 /* Debug */,
@@ -747,7 +747,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229B7AE12F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabsTests" */ = {
+		229B7AE12F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7AE22F167E350051F4E4 /* Debug */,
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		229B7AE42F167E350051F4E4 /* Build configuration list for PBXNativeTarget "HorizontalTabsUITests" */ = {
+		229B7AE42F167E350051F4E4 /* Build configuration list for PBXNativeTarget "VerticalTabsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7AE52F167E350051F4E4 /* Debug */,

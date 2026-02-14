@@ -1,10 +1,10 @@
-# Privacy Policy for Horizontal Tabs
+# Privacy Policy for Vertical Tabs
 
 **Last updated:** January 24, 2026
 
 ## Overview
 
-Horizontal Tabs is a Safari extension that respects your privacy.
+Vertical Tabs is a Safari extension that respects your privacy.
 
 ## Data Collection
 

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  HorizontalTabs
+//  VerticalTabs
 //
 //  Created by Guinevere Orvis on 2026-01-13.
 //
@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "SmashingLabs.HorizontalTabs.Extension"
+let extensionBundleIdentifier = "SmashingLabs.VerticalTabs.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 

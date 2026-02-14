@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  HorizontalTabs
+//  VerticalTabs
 //
 //  Created by Guinevere Orvis on 2026-01-13.
 //

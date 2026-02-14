@@ -5,7 +5,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string></string>
 	<key>CFBundleIconFile</key>
-	<string>Horizontal Tabs</string>
+	<string>Vertical Tabs</string>
 	<key>CFBundleSignature</key>
 	<string></string>
 </dict>

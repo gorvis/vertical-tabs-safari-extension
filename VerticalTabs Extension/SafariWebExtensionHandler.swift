@@ -1,6 +1,6 @@
 //
 //  SafariWebExtensionHandler.swift
-//  HorizontalTabs Extension
+//  VerticalTabs Extension
 //
 //  Created by Guinevere Orvis on 2026-01-13.
 //

@@ -1,4 +1,4 @@
-// Horizontal Tabs - Content script
+// Vertical Tabs - Content script
 let sidebar = null;
 let currentTabs = { pinned: [], regular: [] };
 
@@ -30,7 +30,7 @@ async function createSidebar() {
   
   const config = await shouldEnableExtension();
   if (!config.enabled) {
-    console.log('Horizontal Tabs: Disabled on this site');
+    console.log('Vertical Tabs: Disabled on this site');
     return;
   }
   

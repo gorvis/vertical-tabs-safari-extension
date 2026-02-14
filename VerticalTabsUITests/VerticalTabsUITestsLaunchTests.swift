@@ -1,13 +1,13 @@
 //
-//  HorizontalTabsUITestsLaunchTests.swift
-//  HorizontalTabsUITests
+//  VerticalTabsUITestsLaunchTests.swift
+//  VerticalTabsUITests
 //
 //  Created by Guinevere Orvis on 2026-01-13.
 //
 
 import XCTest
 
-final class HorizontalTabsUITestsLaunchTests: XCTestCase {
+final class VerticalTabsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

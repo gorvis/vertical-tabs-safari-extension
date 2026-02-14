@@ -1,4 +1,4 @@
-// Horizontal Tabs - Popup settings
+// Vertical Tabs - Popup settings
 let currentSite = '';
 
 async function loadSettings() {
