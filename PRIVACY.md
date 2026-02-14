@@ -25,4 +25,4 @@ All processing happens locally on your device. Nothing ever leaves your Mac.
 ## Contact
 
 Questions? Contact: gorvis@gmail.com  
-GitHub: https://github.com/gorvis/horizontal-tabs-safari-extension
+GitHub: https://github.com/gorvis/vertical-tabs-safari-extension

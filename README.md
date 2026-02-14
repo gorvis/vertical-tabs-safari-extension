@@ -1,8 +1,7 @@
-# Horizontal / Vertical Tabs for Safari
+# Horizontal Tabs for Safari
 
 A Safari extension that displays your open tabs in a vertical sidebar with favicons for easy navigation. 
 
-Note: The tab bar itself is horizontal (to the left side of your browser), which enables tabs to show vertically. I probably should have just named it "Sidebar Tabs.' 😂
 
 ![Horizontal Tabs Screenshot](screenshot.png)
 
@@ -25,7 +24,7 @@ Download in Apple App Store: https://apps.apple.com/ca/app/horizontal-tabs/id675
 ### From Source
 
 1. Clone this repository
-2. Open `HorizontalTabs.xcodeproj` in Xcode
+2. Open `Horizontal Tabs.xcodeproj` in Xcode
 3. Build and run (⌘R)
 4. In Safari: Settings → Extensions → Enable "Horizontal Tabs"
 5. Click "Always Allow" for permissions
@@ -51,7 +50,7 @@ The sidebar uses a layout technique that may conflict with:
 - Some accessibility zoom features
 - Single-page apps with custom view transitions
 
-If you experience layout issues on specific sites, please [report them on GitHub](https://github.com/gorvis/horizontal-tabs-safari-extension/issues).
+If you experience layout issues on specific sites, please [report them on GitHub](https://github.com/gorvis/vertical-tabs-safari-extension/issues).
 
 ### Workarounds
 

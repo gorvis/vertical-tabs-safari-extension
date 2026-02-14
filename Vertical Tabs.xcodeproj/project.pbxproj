@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-	229B7ABF2F167E350051F4E4 /* HorizontalTabs Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		229B7ABF2F167E350051F4E4 /* HorizontalTabs Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 229B7ABE2F167E350051F4E4 /* HorizontalTabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,7 +256,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */;
+			buildConfigurationList = 229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Vertical Tabs" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -720,7 +720,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Horizontal Tabs" */ = {
+		229B7A892F167E330051F4E4 /* Build configuration list for PBXProject "Vertical Tabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				229B7ADB2F167E350051F4E4 /* Debug */,
