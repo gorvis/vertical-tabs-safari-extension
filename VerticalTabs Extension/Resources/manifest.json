@@ -1,20 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Vertical Tabs",
-  "version": "1.1.0",
+  "version": "1.0",
   "description": "Vertical sidebar showing tab favicons for easy navigation",
   "permissions": [
     "tabs",
+    "scripting",
     "storage"
   ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "images/icon16.png",
-      "32": "images/icon32.png",
-      "48": "images/icon48.png"
-    }
-  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "background.js",
     "type": "module"

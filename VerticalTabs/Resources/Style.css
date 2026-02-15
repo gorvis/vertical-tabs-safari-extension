@@ -7,7 +7,7 @@
 :root {
     color-scheme: light dark;
 
-    --spacing: 20px;
+    --spacing: 16px;
 }
 
 html {
@@ -28,6 +28,24 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.description {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .description {
+        color: #999;
+    }
+}
+
 body:not(.state-on, .state-off) :is(.state-on, .state-off) {
     display: none;
 }
@@ -42,4 +60,25 @@ body.state-off :is(.state-on, .state-unknown) {
 
 button {
     font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e8e8e8;
+}
+
+@media (prefers-color-scheme: dark) {
+    button {
+        background: #3a3a3a;
+        border-color: #555;
+        color: #eee;
+    }
+
+    button:hover {
+        background: #4a4a4a;
+    }
 }
