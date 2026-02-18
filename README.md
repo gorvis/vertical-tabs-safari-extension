@@ -11,7 +11,7 @@ A Safari extension that displays your open tabs in a vertical sidebar with favic
 - 🎯 Click to switch tabs instantly
 - 📌 Pinned tabs displayed at the top
 - 🎨 Colorful letter icons for sites without favicons
-- 🅰 Uses a fallback favicon when a site’s icon can’t be loaded
+- 🅰 Turn on or off by site
 - 🌓 Dark mode support
 - ⚡ Real-time updates as you open/close tabs
 
@@ -19,7 +19,7 @@ A Safari extension that displays your open tabs in a vertical sidebar with favic
 
 ### From Mac App Store
 
-Download in Apple App Store: https://apps.apple.com/ca/app/vertical-tabs/id6758244678?mt=12
+Download in Apple App Store: https://apps.apple.com/ca/app/vertical-tabs/id6759219683?mt=12
 
 ### From Source
 
